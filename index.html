@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 class="heading">Please Fill The Form to Signup.</h1>
+    <form aciton ="/myaction.php" id="validationForm" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign3" id="fname">
+          First Name: <input type="text" name="fname" required placeholder="Enter the first name "><b><span class="formerror"> </span></b>
+        </div>
+       <div class="formdesign3" id="lname">
+     Last Name: <input type="text" name="flname" required placeholder="Enter the last name "><b><span class="formerror"> </span></b>
+    </div>
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" required placeholder="Enter the email Id"><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone: <input type="phone" name="fphone" required placeholder="Enter Phone No."><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign2" id="pass">
+            Password: <input type="password" name="fpass" required placeholder="Enter Password."><b><span class="formerror"></span></b>
+        </div>
+      
+
+        <div class="formdesign1" id="cpass">
+            Confirm Password: <input type="password" name="fcpass" required placeholder="Confirm Password"><b><span class="formerror"></span></b>
+        </div>
+<div class="wrap">
+        <input class="but" type="submit" value="Submit">
+    </div>
+    </form>
+</body>
+<script src="app.js"></script>
+
+</html>
