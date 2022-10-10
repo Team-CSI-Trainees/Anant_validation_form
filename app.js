@@ -6,8 +6,6 @@ function clearErrors(){
     {
         item.innerHTML = "";
     }
-
-
 }
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -49,11 +47,11 @@ form.flname.addEventListener('input',()=>{
 form.fphone.addEventListener('input',()=>{
     var number = form.fphone.value;
     // var regex = /91/;
-    if(number.match(/^(\+\d{1,3}[- ]?)?\d{9}$/) && ! (number.match(/0{5,}/))){
+    if(number.match(/^\d{10}$/)){
         clearErrors();
     }
     else{
-        seterror("phone",'*incorrect phone number and add +91 before the no.');
+        seterror("phone",'*incorrect phone number');
     }
 })
 form.femail.addEventListener('input',()=>{

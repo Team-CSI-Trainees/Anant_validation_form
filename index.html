@@ -12,7 +12,7 @@
 
 <body>
     <h1 class="heading">Please Fill The Form to Signup.</h1>
-  
+    <form name="myForm"  id="validationForm">
         <div class="formdesign3" id="fname">
           First Name: <input type="text" name="fname" required placeholder="Enter the first name "><b><span class="formerror"> </span></b>
         </div>
@@ -27,12 +27,12 @@
             Phone: <input type="phone" name="fphone" required placeholder="Enter Phone No."><b><span class="formerror"></span></b>
         </div>
         <div class="formdesign2" id="pass">
-            Password: <input type="password" name="fpass" required placeholder="Enter Password."><b><span class="formerror"></span></b>
+            Password: <input type="password" name="fpass" autocomplete="new-password" required placeholder="Enter Password."><b><span class="formerror"></span></b>
         </div>
       
 
         <div class="formdesign1" id="cpass">
-            Confirm Password: <input type="password" name="fcpass" required placeholder="Confirm Password"><b><span class="formerror"></span></b>
+            Confirm Password: <input type="password" autocomplete="current-password" name="fcpass" required placeholder="Confirm Password"><b><span class="formerror"></span></b>
         </div>
 <div class="wrap">
         <input class="but" type="submit" value="Submit">
