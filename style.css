@@ -1,6 +1,6 @@
 body {
     padding: 10px 50px;
-    background-image:url("background.jpeg");
+    background-image:url("alpinejs.png");
     background-color: #cccccc;
 }
 form{
@@ -10,24 +10,30 @@ grid-template-columns: 100vw;
 h1{
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    background-color: #B9D9EB;
+    
 }
 .formdesign {
-    font-size: 20px;
+    font-size: 25px;
+    color: black;
     text-align: center;
 }
 .formdesign1{
-font-size: 20px;
+font-size: 25px;
 text-align: center;
-
+color: black;
 }
 .formdesign2{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
+    color: black;
 }
 
 .formdesign3{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
+    color: black ;
 }
 
 .formdesign3 input{
@@ -40,7 +46,7 @@ text-align: center;
 }
 
 .formdesign2 input{
-    width: 33.7%;
+    width: 32.7%;
     padding: 12px 20px;
     border: 1px solid blue;
     margin: 14px;
@@ -50,7 +56,7 @@ text-align: center;
 
 
 .formdesign1 input{
-    width: 29.6%;
+    width: 27.3%;
     padding: 12px 20px;
     border: 1px solid blue;
     margin: 14px;
@@ -69,7 +75,7 @@ text-align: center;
 
 .formerror {
    
-    color:white;
+    color:red;
     border-radius: 4px;
     padding: 12px 20px;
 }
