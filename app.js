@@ -25,7 +25,7 @@ function seterror(id, error){
 form.fname.addEventListener('input',()=>{
     var name = form.fname.value;   
 
- if(name.match(/^[a-zA-Z]{4,}$/)){
+ if(name.match(/^[a-zA-Z ]{4,}$/)){
     clearErrors();
   }
     else{
@@ -46,7 +46,7 @@ form.flname.addEventListener('input',()=>{
 })
 form.fphone.addEventListener('input',()=>{
     var number = form.fphone.value;
-    // var regex = /91/;
+   
     if(number.match(/^\d{10}$/)){
         clearErrors();
     }
